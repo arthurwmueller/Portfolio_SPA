@@ -36,7 +36,7 @@ function Body(props){
         )
     } else {
         return(
-            <card className="card">
+            <card className="card mx-auto">
                 <h3>Please look in the navbar to find content</h3>
             </card>
         )
