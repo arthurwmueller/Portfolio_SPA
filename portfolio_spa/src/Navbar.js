@@ -11,15 +11,16 @@ const Nav = props => {
           <span className="navbar-toggler-icon"></span>
           </button>
           <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
-            <button className="nav-item nav-link">Font</button>
-            <button className="nav-item nav-link">Sports</button>
-            <button className="nav-item nav-link">Movie Reviews</button>
-            <button className="nav-item nav-link">Countdown</button>
-            <button className="nav-item nav-link">Iced Coffee</button>
-            <button className="nav-item nav-link">FAQ</button>
+            <button onClick={props.showFont} className="nav-item nav-link">Font</button>
+            <button onClick={props.showSports} className="nav-item nav-link">Sports</button>
+            <button onClick={props.showMovies} className="nav-item nav-link">Movie Reviews</button>
+            <button onClick={props.showCountdown} className="nav-item nav-link">Countdown</button>
+            <button onClick={props.showIcedCoffee} className="nav-item nav-link">Iced Coffee</button>
+            <button onClick={props.showFAQ} className="nav-item nav-link">FAQ</button>
           </div>
         </nav>
     );
 }
 
 export default Nav;
+

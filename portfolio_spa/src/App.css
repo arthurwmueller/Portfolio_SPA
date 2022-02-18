@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Comic Sans MS";
   background-color:#FFB81C;
 }
 
@@ -23,13 +24,16 @@
 }
 
 .App-footer {
-  background-color: #003594;
+  background-color: #75787B;
   color:white;
   margin-left:5%;
   margin-right:5%;
   margin-bottom:0;
+  margin-top:15px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-width:2px;
+  border-color: #75787B;
 }
 
 .Footer-Text {
@@ -37,6 +41,29 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
+}
+
+.card {
+  margin-left:5%;
+  margin-right: 5%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:15px;
+  padding-bottom: 15px;
+  background-color: #003594;
+  color:white;
+  border-radius: 10px;
+}
+
+p {
+  text-align: left;
+  font-size: medium;
+}
+
+.movie-review {
+  text-align: left;
 }
 
 
