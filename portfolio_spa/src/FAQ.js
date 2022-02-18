@@ -7,7 +7,8 @@ function FAQ(){
             <h3>Frequently Asked Questions</h3>
         </card>
         <card className="card mx-auto">
-            <h3>Sorry, this content is not ready yet</h3>
+            <p><strong>Q: Is this feature available yet?</strong></p>
+            <p>A: No</p>
         </card>
     </div>
     )}

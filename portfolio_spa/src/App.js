@@ -4,7 +4,7 @@ import Nav from './Navbar';
 import Body from './Body';
 
 
-const showView="Sports";
+const showView="Font";
 const font="Comic Sans MS";
 const styledFont={"font-family":font}
 
