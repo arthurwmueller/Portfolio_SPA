@@ -11,12 +11,13 @@ const Nav = props => {
           <span className="navbar-toggler-icon"></span>
           </button>
           <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
-            <button onClick={props.showFont} className="nav-item nav-link">Font</button>
-            <button onClick={props.showSports} className="nav-item nav-link">Sports</button>
-            <button onClick={props.showMovies} className="nav-item nav-link">Movie Reviews</button>
-            <button onClick={props.showCountdown} className="nav-item nav-link">Countdown</button>
-            <button onClick={props.showIcedCoffee} className="nav-item nav-link">Iced Coffee</button>
-            <button onClick={props.showFAQ} className="nav-item nav-link">FAQ</button>
+            <button onClick={()=>props.changeView("About")} className="nav-item nav-link">About Me</button>
+            <button onClick={()=>props.changeView("Font")} className="nav-item nav-link">Font</button>
+            <button onClick={()=>props.changeView("Sports")} className="nav-item nav-link">Sports</button>
+            <button onClick={()=>props.changeView("Movies")} className="nav-item nav-link">Movie Reviews</button>
+            <button onClick={()=>props.changeView("Countdown")} className="nav-item nav-link">Countdown</button>
+            <button onClick={()=>props.changeView("IcedCoffee")} className="nav-item nav-link">Iced Coffee</button>
+            <button onClick={()=>props.changeView("FAQ")} className="nav-item nav-link">FAQ</button>
           </div>
         </nav>
     );

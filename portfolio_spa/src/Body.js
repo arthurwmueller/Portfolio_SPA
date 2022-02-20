@@ -1,4 +1,5 @@
-import React, {useState, Component} from 'react';
+import React from 'react';
+import About from './About';
 import Countdown from './Countdown';
 import FAQ from './FAQ';
 import Font from './Font';
@@ -11,10 +12,15 @@ function Body(props){
 
     
 
-    if(props.view==="Font"){
-    return (
-        <Font font={props.font}/>
-    )} else if(props.view==="Sports"){
+    if(props.view==="About"){
+        return(
+            <About/>
+        )
+    } else if(props.view==="Font"){
+        return (
+            <Font font={props.font} changeFont={props.changeFont}/>
+        )
+} else if(props.view==="Sports"){
         return (
             <Sports/>
         )
