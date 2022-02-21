@@ -1,9 +1,7 @@
 import React from 'react';
 import About from './About';
 import Countdown from './Countdown';
-import FAQ from './FAQ';
 import Font from './Font';
-import IcedCoffee from './IcedCoffee';
 import Movies from './Movies';
 import Sports from './Sports';
 
@@ -31,14 +29,6 @@ function Body(props){
     } else if(props.view==="Countdown"){
         return(
             <Countdown/>
-        )
-    } else if(props.view==="IcedCoffee"){
-        return(
-            <IcedCoffee/>
-        )
-    } else if(props.view==="FAQ"){
-        return(
-            <FAQ/>
         )
     } else {
         return(

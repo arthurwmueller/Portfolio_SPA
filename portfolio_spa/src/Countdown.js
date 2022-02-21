@@ -2,17 +2,49 @@ import React from "react";
 
 class Countdown extends React.Component{
 
+    
+    
+    constructor(){
+        super();
+        this.state={currentDate: new Date()};
+    }
+
+    keepTime(){
+        this.setState({
+            currentDate:new Date()
+        })
+    }
+
+    componentDidMount(){
+        this.timerID=setInterval(()=>this.keepTime(),1000)
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.timerID);
+    }
+
     render() {
+
+        const events=[
+            {id:1,title:"The Daytona 500",date: new Date(2022,2,20,19,30)},
+            {id:2,title:"The Indianapolis 500",date:new Date(2022,5,29,15,0)}];
+
+        const content=events.map((singleEvent)=>
+        <div className="body" key={singleEvent.id}>
+            <card className="card">
+                <div className="card-body">
+                    <p>{singleEvent.title} will happen on {singleEvent.date.toLocaleDateString} at {singleEvent.date.toLocaleTimeString}</p>
+                    <p>Countdown Clock Goes Here</p>
+                </div>
+            </card>
+        </div>);
+
         return(
             <div>
-                <card className="card mx-auto">
-                    <h3>Countdown</h3>
+                <card className="card">
+                    <h3 className="card-title">It is currently {this.state.currentDate.toLocaleTimeString} on {this.state.currentDate.toLocaleDateString}</h3>
                 </card>
-                <card className="card mx-auto">
-                    <p>
-                        Sorry, the countdown feature is not yet available. However I did hardcode this text in here to tell you that the Daytona 500 is this Sunday at 2:30pm ET, so I guess do the math yourself?
-                    </p>
-                </card>
+                <div>{content}</div>
             </div>
         )
     }

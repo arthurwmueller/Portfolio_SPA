@@ -6,7 +6,7 @@ const Nav = props => {
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
     return (
-        <nav className="navbar navbar-expand-xl navbar-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark">
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
           <span className="navbar-toggler-icon"></span>
           </button>
@@ -16,8 +16,6 @@ const Nav = props => {
             <button onClick={()=>props.changeView("Sports")} className="nav-item nav-link">Sports</button>
             <button onClick={()=>props.changeView("Movies")} className="nav-item nav-link">Movie Reviews</button>
             <button onClick={()=>props.changeView("Countdown")} className="nav-item nav-link">Countdown</button>
-            <button onClick={()=>props.changeView("IcedCoffee")} className="nav-item nav-link">Iced Coffee</button>
-            <button onClick={()=>props.changeView("FAQ")} className="nav-item nav-link">FAQ</button>
           </div>
         </nav>
     );

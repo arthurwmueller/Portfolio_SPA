@@ -3,10 +3,10 @@ import React from "react";
 function Movies() {
     return(
         <div>
-            <card className="card mx-auto">
+            <card className="card">
                 <h3>Movie Reviews</h3>
             </card>
-            <card className="card movie-review mx-auto">
+            <card className="card movie-review">
                 <div class="card-title">
                     <h4><strong>Moonfall (8/10)</strong></h4>
                 </div>
