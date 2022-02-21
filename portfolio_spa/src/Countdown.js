@@ -33,7 +33,7 @@ class Countdown extends React.Component{
         <div className="body" key={singleEvent.id}>
             <card className="card">
                 <div className="card-body">
-                    <p>{singleEvent.title} will happen on {singleEvent.date.toLocaleDateString} at {singleEvent.date.toLocaleTimeString}</p>
+                    <p>{singleEvent.title} will happen on {singleEvent.date.toLocaleDateString()} at {singleEvent.date.toLocaleTimeString()}</p>
                     <p>Countdown Clock Goes Here</p>
                 </div>
             </card>
@@ -42,7 +42,7 @@ class Countdown extends React.Component{
         return(
             <div>
                 <card className="card">
-                    <h3 className="card-title">It is currently {this.state.currentDate.toLocaleTimeString} on {this.state.currentDate.toLocaleDateString}</h3>
+                    <h3 className="card-title">It is currently {this.state.currentDate.toLocaleTimeString()} on {this.state.currentDate.toLocaleDateString()}</h3>
                 </card>
                 <div>{content}</div>
             </div>
