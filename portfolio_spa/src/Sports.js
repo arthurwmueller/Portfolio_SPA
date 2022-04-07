@@ -5,6 +5,9 @@ function Sports(){
             <card className="card">
                 <h3>Sports</h3>
             </card>
+            <card className="card">
+                <p>This page is under construction.</p>
+            </card>
         </div>
     )
 }
