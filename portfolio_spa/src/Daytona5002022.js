@@ -10,7 +10,7 @@ const drivers = [
     {id:6, title:"Harrison Burton",image:"https://www.nascar.com/wp-content/uploads/sites/7/2022/02/16/21_Burton_Clash_2022_1200x520-922x400.jpg",body:"At just 21 years of age, Harrison Burton will be making his Daytona 500 debut. However he will do it driving for the legendary Wood Brothers team, which has an alliance with the Penske team that has looked so fast this year. The car got a bit of damage in a last lap crash in Burton's duel race when he was running at the front, but it has been repaired. The son of NASCAR driver and broadcaster Jeff Burton, Harrison Burton will have the car on raceday to prove he belongs in the Cup Series."}
 ]
 
-function Sports() {
+function Daytona5002022() {
     const content = drivers.map((driver) =>
             <div className="body" key={driver.id}>
                 <card className="card image-card">
@@ -32,4 +32,4 @@ function Sports() {
     )
 }
 
-export default Sports;
+export default Daytona5002022;
